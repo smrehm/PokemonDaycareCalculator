@@ -14,5 +14,10 @@
 printClock(calculateTime($pokemon,$currentLevel, $targetLevel));
 ?>
 </p>
+<p>
+<?php 
+printClock(calculateTime($pokemon));
+?>
+</p>
 </body>
 </html>

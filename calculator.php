@@ -18,7 +18,7 @@ function getEXP($group, $level) {
 	return $LevelsEXP[$group][$level];
 }
 
-function calculateTime($pokemon, $currentLevel, $targetLevel) {
+function calculateTime($pokemon, $currentLevel = 1, $targetLevel = 100) {
 	$timerate = 14.8; // steps per second
 	$group = findGroup($pokemon);
 	$currentEXP = getEXP($group, $currentLevel);
