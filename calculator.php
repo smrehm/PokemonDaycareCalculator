@@ -51,7 +51,7 @@ function getSeconds($timeInSeconds) {
 }
 
 function printClock($timeInSeconds) {
-	echo getHours($time) . ":" . getMinutes($time) . ":" . getSeconds($time);
+	echo getHours($timeInSeconds) . ":" . getMinutes($timeInSeconds) . ":" . getSeconds($timeInSeconds);
 }
 
 //$pokemon = $_GET['pokemon'];
