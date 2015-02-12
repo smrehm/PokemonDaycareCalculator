@@ -1,5 +1,7 @@
 <?php
 
+include "PokemonDB.php";
+
 function findGroup($inputPokemon) {
 	$i = 0;
 	$j = 0;
