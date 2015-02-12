@@ -1,5 +1,5 @@
 <?php
-	include calculator.php;
+	include "calculator.php";
 ?>
 <html>
 <head>
@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<?php include clock.html; ?>
+<?php include "clock.html"; ?>
 <p>
 <?php 
 printClock(calculateTime($pokemon,$currentLevel, $targetLevel));
