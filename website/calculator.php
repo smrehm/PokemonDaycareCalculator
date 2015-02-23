@@ -1,5 +1,7 @@
 <?php
 
+include "PokemonDB.php";
+
 function findGroup($inputPokemon) {
 	$i = 0;
 	$j = 0;
@@ -18,7 +20,7 @@ function getEXP($group, $level) {
 	return $LevelsEXP[$group][$level];
 }
 
-function calculateTime($pokemon, $currentLevel, $targetLevel) {
+function calculateTime($pokemon, $currentLevel = 1, $targetLevel = 100) {
 	$timerate = 14.8; // steps per second
 	$group = findGroup($pokemon);
 	$currentEXP = getEXP($group, $currentLevel);
@@ -49,7 +51,7 @@ function getSeconds($timeInSeconds) {
 }
 
 function printClock($timeInSeconds) {
-	echo getHours($time) . ":" . getMinutes($time) . ":" . getSeconds($time);
+	echo getHours($timeInSeconds) . ":" . getMinutes($timeInSeconds) . ":" . getSeconds($timeInSeconds);
 }
 
 //$pokemon = $_GET['pokemon'];
